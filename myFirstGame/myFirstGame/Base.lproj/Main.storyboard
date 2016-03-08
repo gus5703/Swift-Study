@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="eKn-Iu-2Jd">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="myFirstGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8aa-yV-Osq"/>
+                        <viewControllerLayoutGuide type="bottom" id="qHh-Mt-9TT"/>
+                    </layoutGuides>
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1033" y="502"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="7fl-jm-Dym">
+            <objects>
+                <viewController id="eKn-Iu-2Jd" customClass="ViewController" customModule="myFirstGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="l53-GI-Ati"/>
+                        <viewControllerLayoutGuide type="bottom" id="Cr7-Nh-hFM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="l5I-ph-4xw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9hE-bi-Lu9">
+                                <rect key="frame" x="200" y="162" width="200" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="인원을 선택하세요 ( 1 ~ 100)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wM5-Vv-ZDb">
+                                <rect key="frame" x="202" y="103" width="197" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vOi-uW-fao">
+                                <rect key="frame" x="228" y="444" width="144" height="81"/>
+                                <state key="normal" title="시작"/>
+                                <connections>
+                                    <action selector="startAction:" destination="eKn-Iu-2Jd" eventType="touchUpInside" id="KKO-aG-mnC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vOi-uW-fao" firstAttribute="centerX" secondItem="l5I-ph-4xw" secondAttribute="centerX" id="LeT-Nw-yhH"/>
+                            <constraint firstItem="wM5-Vv-ZDb" firstAttribute="centerX" secondItem="l5I-ph-4xw" secondAttribute="centerX" id="RsD-7s-jF9"/>
+                            <constraint firstItem="9hE-bi-Lu9" firstAttribute="centerX" secondItem="l5I-ph-4xw" secondAttribute="centerX" id="Yx1-aq-Y02"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="9hE-bi-Lu9" id="26A-Jp-ofW"/>
+                        <segue destination="BV1-FR-VrT" kind="showDetail" identifier="start" id="aij-V2-FIg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WFO-cz-tOq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="346" y="502"/>
+        </scene>
+    </scenes>
+</document>

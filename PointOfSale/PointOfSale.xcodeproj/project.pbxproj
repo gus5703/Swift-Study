@@ -1,0 +1,396 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		41542BFD1C67178000BA2BA0 /* SaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41542BFC1C67178000BA2BA0 /* SaleView.swift */; };
+		41542BFF1C6A1C0000BA2BA0 /* SaleTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41542BFE1C6A1C0000BA2BA0 /* SaleTableCell.swift */; };
+		418078591C5888ED00436358 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418078581C5888ED00436358 /* AppDelegate.swift */; };
+		4180785B1C5888ED00436358 /* AddProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4180785A1C5888ED00436358 /* AddProductView.swift */; };
+		4180785E1C5888ED00436358 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4180785C1C5888ED00436358 /* Main.storyboard */; };
+		418078601C5888ED00436358 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4180785F1C5888ED00436358 /* Assets.xcassets */; };
+		418078631C5888ED00436358 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 418078611C5888ED00436358 /* LaunchScreen.storyboard */; };
+		4180786B1C5921FB00436358 /* ProductList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4180786A1C5921FB00436358 /* ProductList.swift */; };
+		4180786D1C59734300436358 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4180786C1C59734300436358 /* Product.swift */; };
+		4180786F1C5AD2AF00436358 /* ProductListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4180786E1C5AD2AF00436358 /* ProductListCell.swift */; };
+		418078761C5EFB0A00436358 /* detailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418078751C5EFB0A00436358 /* detailViewController.swift */; };
+		FF1FDCA6969D11AE13F260BC /* Pods_PointOfSale.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD7C8949FB515BA6C221428 /* Pods_PointOfSale.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3346A91F29FE804DD6698C22 /* Pods-PointOfSale.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PointOfSale.release.xcconfig"; path = "Pods/Target Support Files/Pods-PointOfSale/Pods-PointOfSale.release.xcconfig"; sourceTree = "<group>"; };
+		3DD7C8949FB515BA6C221428 /* Pods_PointOfSale.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PointOfSale.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41542BFC1C67178000BA2BA0 /* SaleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaleView.swift; sourceTree = "<group>"; };
+		41542BFE1C6A1C0000BA2BA0 /* SaleTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaleTableCell.swift; sourceTree = "<group>"; };
+		418078551C5888ED00436358 /* PointOfSale.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PointOfSale.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		418078581C5888ED00436358 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4180785A1C5888ED00436358 /* AddProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductView.swift; sourceTree = "<group>"; };
+		4180785D1C5888ED00436358 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4180785F1C5888ED00436358 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		418078621C5888ED00436358 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		418078641C5888ED00436358 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4180786A1C5921FB00436358 /* ProductList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductList.swift; sourceTree = "<group>"; };
+		4180786C1C59734300436358 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		4180786E1C5AD2AF00436358 /* ProductListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListCell.swift; sourceTree = "<group>"; };
+		418078751C5EFB0A00436358 /* detailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = detailViewController.swift; sourceTree = "<group>"; };
+		F358260C2DDC9DC42D9B40B0 /* Pods-PointOfSale.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PointOfSale.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PointOfSale/Pods-PointOfSale.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		418078521C5888ED00436358 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF1FDCA6969D11AE13F260BC /* Pods_PointOfSale.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4180784C1C5888ED00436358 = {
+			isa = PBXGroup;
+			children = (
+				418078571C5888ED00436358 /* PointOfSale */,
+				418078561C5888ED00436358 /* Products */,
+				9337DE90DF75520507E1AF61 /* Pods */,
+				E9B81F6E0C1CA8A0DD1354FA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		418078561C5888ED00436358 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				418078551C5888ED00436358 /* PointOfSale.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		418078571C5888ED00436358 /* PointOfSale */ = {
+			isa = PBXGroup;
+			children = (
+				418078581C5888ED00436358 /* AppDelegate.swift */,
+				4180785A1C5888ED00436358 /* AddProductView.swift */,
+				4180785C1C5888ED00436358 /* Main.storyboard */,
+				41542BFC1C67178000BA2BA0 /* SaleView.swift */,
+				41542BFE1C6A1C0000BA2BA0 /* SaleTableCell.swift */,
+				4180786E1C5AD2AF00436358 /* ProductListCell.swift */,
+				4180786C1C59734300436358 /* Product.swift */,
+				4180786A1C5921FB00436358 /* ProductList.swift */,
+				418078751C5EFB0A00436358 /* detailViewController.swift */,
+				4180785F1C5888ED00436358 /* Assets.xcassets */,
+				418078611C5888ED00436358 /* LaunchScreen.storyboard */,
+				418078641C5888ED00436358 /* Info.plist */,
+			);
+			path = PointOfSale;
+			sourceTree = "<group>";
+		};
+		9337DE90DF75520507E1AF61 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F358260C2DDC9DC42D9B40B0 /* Pods-PointOfSale.debug.xcconfig */,
+				3346A91F29FE804DD6698C22 /* Pods-PointOfSale.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E9B81F6E0C1CA8A0DD1354FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DD7C8949FB515BA6C221428 /* Pods_PointOfSale.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		418078541C5888ED00436358 /* PointOfSale */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 418078671C5888ED00436358 /* Build configuration list for PBXNativeTarget "PointOfSale" */;
+			buildPhases = (
+				6315352079087A8239981AFC /* Check Pods Manifest.lock */,
+				418078511C5888ED00436358 /* Sources */,
+				418078521C5888ED00436358 /* Frameworks */,
+				418078531C5888ED00436358 /* Resources */,
+				286B66E87A27644B3144338B /* Embed Pods Frameworks */,
+				DCDCE5E1FA5AF6A14C4606A4 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PointOfSale;
+			productName = PointOfSale;
+			productReference = 418078551C5888ED00436358 /* PointOfSale.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4180784D1C5888ED00436358 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "왕승현";
+				TargetAttributes = {
+					418078541C5888ED00436358 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 948BK35888;
+					};
+				};
+			};
+			buildConfigurationList = 418078501C5888ED00436358 /* Build configuration list for PBXProject "PointOfSale" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4180784C1C5888ED00436358;
+			productRefGroup = 418078561C5888ED00436358 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				418078541C5888ED00436358 /* PointOfSale */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		418078531C5888ED00436358 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				418078631C5888ED00436358 /* LaunchScreen.storyboard in Resources */,
+				418078601C5888ED00436358 /* Assets.xcassets in Resources */,
+				4180785E1C5888ED00436358 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		286B66E87A27644B3144338B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PointOfSale/Pods-PointOfSale-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6315352079087A8239981AFC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DCDCE5E1FA5AF6A14C4606A4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PointOfSale/Pods-PointOfSale-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		418078511C5888ED00436358 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41542BFD1C67178000BA2BA0 /* SaleView.swift in Sources */,
+				4180785B1C5888ED00436358 /* AddProductView.swift in Sources */,
+				4180786D1C59734300436358 /* Product.swift in Sources */,
+				41542BFF1C6A1C0000BA2BA0 /* SaleTableCell.swift in Sources */,
+				418078591C5888ED00436358 /* AppDelegate.swift in Sources */,
+				4180786B1C5921FB00436358 /* ProductList.swift in Sources */,
+				4180786F1C5AD2AF00436358 /* ProductListCell.swift in Sources */,
+				418078761C5EFB0A00436358 /* detailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4180785C1C5888ED00436358 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4180785D1C5888ED00436358 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		418078611C5888ED00436358 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				418078621C5888ED00436358 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		418078651C5888ED00436358 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		418078661C5888ED00436358 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		418078681C5888ED00436358 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F358260C2DDC9DC42D9B40B0 /* Pods-PointOfSale.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PointOfSale/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ingyoe.PointOfSale;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		418078691C5888ED00436358 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3346A91F29FE804DD6698C22 /* Pods-PointOfSale.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PointOfSale/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ingyoe.PointOfSale;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		418078501C5888ED00436358 /* Build configuration list for PBXProject "PointOfSale" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				418078651C5888ED00436358 /* Debug */,
+				418078661C5888ED00436358 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		418078671C5888ED00436358 /* Build configuration list for PBXNativeTarget "PointOfSale" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				418078681C5888ED00436358 /* Debug */,
+				418078691C5888ED00436358 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4180784D1C5888ED00436358 /* Project object */;
+}
