@@ -21,28 +21,24 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
         
         locationManager.delegate = self
         locationManager.activityType = .Fitness
         locationManager.distanceFilter = kCLLocationAccuracyBestForNavigation
+        
         if locationManager.respondsToSelector("requestAlwaysAuthorization") {
             self.locationManager.requestAlwaysAuthorization()
         }
+        
         locationManager.startUpdatingLocation()
         locationManager.pausesLocationUpdatesAutomatically = true
         locationManager.allowsBackgroundLocationUpdates = true
+        
         self.mapView.showsUserLocation = true
         self.mapView.delegate = self
         
-        
-        
-        
-        
     }
-
-
+    
     func drawRoute() {
         var coordinates: [CLLocationCoordinate2D] = []
         for i in path { coordinates.append(i) }
@@ -55,7 +51,7 @@ class ViewController: UIViewController {
             
         }
         
-
+        
     }
     @IBAction func myLocation(sender: AnyObject) {
         let location = path.last
@@ -77,7 +73,7 @@ extension ViewController: CLLocationManagerDelegate {
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let location: CLLocation = locations.last as CLLocation!
         let newLocation = CLLocationCoordinate2DMake(location.coordinate.latitude, location.coordinate.longitude)
-
+        
         count++
         if count > 300 {
             print("New Location add! pathCount : \(path.count)")
@@ -85,19 +81,11 @@ extension ViewController: CLLocationManagerDelegate {
             drawRoute()
             count = 0
         }
-        //self.locationManager.stopUpdatingLocation()
-        //self.timer = NSTimer(timeInterval: 0.01, target: self, selector: "turnOnLocationManger", userInfo: nil, repeats: false)
-
-        
-        
-        //label.text = "\(location.coordinate.latitude)"
-       
         
         if UIApplication.sharedApplication().applicationState == .Background {
             print("App is backgrounded. New location is \(newLocation)")
         }
     }
-    
     
     
     func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
@@ -126,11 +114,11 @@ extension ViewController: MKMapViewDelegate {
 
 extension ViewController: UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool {
-
+        
         if (launchOptions![UIApplicationLaunchOptionsLocationKey] != nil) {
-         self.locationManager.startMonitoringSignificantLocationChanges()
+            self.locationManager.startMonitoringSignificantLocationChanges()
         }
-    return true
+        return true
     }
     
 }
