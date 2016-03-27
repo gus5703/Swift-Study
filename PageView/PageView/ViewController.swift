@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  RealTimeChattingIOS
+//  PageView
 //
-//  Created by 왕승현 on 2016. 3. 23..
+//  Created by 왕승현 on 2016. 3. 13..
 //  Copyright © 2016년 왕승현. All rights reserved.
 //
 
